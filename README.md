@@ -16,6 +16,15 @@ This project utilizes real-world photogrammetry and 3D building scans, heavily o
 * **Version Control:** Git & GitHub (with Git Large File Storage)
 * **Methodology:** Agile (XP) aiming for a 6-month MVP delivery.
 
+## 🤝 XP Collaboration & Version Control Rules
+
+This project utilizes Extreme Programming (XP) and Trunk-Based Development. 
+
+* **Single Source of Truth:** We push directly to `main` (or use < 24-hour temporary branches). Ensure your local `main` is pulled and up-to-date before starting any work.
+* **Pair Programming Default:** Major architectural tasks, complex Blueprint logic, and difficult retopology workflows should be tackled in pairs to maintain code quality and prevent binary asset collisions.
+* **Continuous Integration:** At the end of every development day, the `main` branch must compile successfully into a testable build. Do not push broken references or uncompiled Blueprints.
+* **Test-Driven Development:** Utilize Unreal's Automation Framework for core mechanics. If you add a new interactive element, add a functional test for it.
+
 ---
 
 ## 🚀 Getting Started for Developers
