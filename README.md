@@ -33,6 +33,6 @@ This project utilizes Extreme Programming (XP) and Trunk-Based Development.
 
 ### 1. Initial Setup
 1. Download and install [Git LFS](https://git-lfs.com/).
-2. Open your terminal and initialize LFS on your machine:
+2. Open your git bash terminal and initialize LFS on your machine:
    ```bash
    git lfs install
