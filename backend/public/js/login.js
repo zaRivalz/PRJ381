@@ -3,7 +3,7 @@ import { MS_CONFIG } from './auth-config.js';
 
 // Already signed in? Skip straight to the dashboard.
 if (isAuthenticated()) {
-  window.location.href = 'index.html';
+  window.location.href = 'dashboard.html';
 }
 
 const btnMsLogin = document.getElementById('btn-ms-login');
@@ -40,7 +40,7 @@ async function initMicrosoftSignIn() {
     const result = await msalInstance.handleRedirectPromise();
     if (result && result.idToken) {
       await loginWithMicrosoft(result.idToken);
-      window.location.href = 'index.html';
+      window.location.href = 'dashboard.html';
       return;
     }
   } catch (err) {
@@ -59,7 +59,7 @@ localForm.addEventListener('submit', async (e) => {
 
   try {
     await login(email, password);
-    window.location.href = 'index.html';
+    window.location.href = 'dashboard.html';
   } catch (err) {
     showError(err.message || 'Sign in failed');
   }
